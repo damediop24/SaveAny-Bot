@@ -1,0 +1,18 @@
+lang = "en" # Language setting, "en" for English
+[telegram]
+token = "" # Your bot token, obtained from @BotFather
+[telegram.proxy]
+# Enable proxy for Telegram
+enable = false
+url = "socks5://127.0.0.1:7890"
+
+[[storages]]
+name = "Local Disk"
+type = "local"
+enable = true
+base_path = "./downloads"
+
+[[users]]
+id = 114514 # Your Telegram account id
+storages = []
+blacklist = true
